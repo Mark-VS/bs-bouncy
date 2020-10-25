@@ -6,6 +6,7 @@ kaka();
 
 import $ from "jquery";
 //import { createPopper } from "@popperjs/core";
+//import { createPopper } from "./../../node_modules/popper.js/dist/umd/popper-utils.js";
 import { createPopper } from  "./../../node_modules/@popperjs/core/dist/umd/popper.js";
 import Util from "./../../node_modules/bootstrap/js/dist/util.js";
 import Tooltip from "./../../node_modules/bootstrap/js/dist/tooltip";

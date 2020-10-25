@@ -53,7 +53,6 @@ gulp.task("startServer", () => {
     });
     browserSync.watch(dist, browserSync.reload);
 });
-
 gulp.task("default", gulp.series("views", "styles", "compile", "startServer"));
 
 gulp.watch(PATHS.src.pug + "index.pug", gulp.series("views"));
