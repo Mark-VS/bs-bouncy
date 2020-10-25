@@ -53,6 +53,10 @@ gulp.task("startServer", () => {
     });
     browserSync.watch(dist, browserSync.reload);
 });
+gulp.task("copy:img", () => {
+    return gulp.src("./src/img/**/*.jpg")
+        .pipe(gulp.dest("./dist/img/"))
+});
 gulp.task("default", gulp.series("views", "styles", "compile", "startServer"));
 
 gulp.watch(PATHS.src.pug + "index.pug", gulp.series("views"));
