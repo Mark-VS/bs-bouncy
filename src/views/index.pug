@@ -4,58 +4,74 @@ html
         title Это тайтл 2
     body
         link(href="styles/main.css" rel="stylesheet" type="text/css")
-        p Это обычный текст5     
+        //
+            div.border.border-primary.d-flex.justify-content-center.flex-column.w-100(style="position: absolute")
+                p.border.border-secondary Это обычный текст5
+                p другой текст
         //script(src="popper.js")
-        .container.border.border-dark
-            
+ 
+        .container.border.border-primary
             .row
                 .col-12
-                    h5 Пример использования bootstrap-сетки
-                .col.border.border-primary Первая колонка
-                .col.border.border-success Вторая колонка
-                .col
-                    p.text-right простой текст
-                .col-12
-                    h5 Пример использования компонента Breadcrumb
-                .col-3
-                    nav(aria-label="breadcrumb")
-                        ol.breadcrumb
-                            li.breadcrumb-item
-                                a(href="#") Home
-                            li.breadcrumb-item
-                                a(href="#") Library
-                            li.breadcrumb-item.active(aria-current="page") Data
-                .col-9 -
+                    div.d-flex.flex-column.h-100.w-100.justify-content-end.align-items-center.pb-5(style="position: absolute; z-index: 1")
+                        div
+                            img(src="./img/hello/ellipse.png" alt="Ellipse")
+                        
+                    .carousel.slide#carouselBeach(data-ride="carousel")
+                        .container.kakasha
+                            .row
+                                .col-4
+                                    h4 bouncy
+                                .col-8.border.border-primary.pr-5
+                                    ul.nav.nav-pills.nav-fill.text-light
+                                        li.nav-item
+                                            a.nav-link.active(href="#") Hello
+                                        li.nav-item
+                                            a.nav-link(href="#") About
+                                        li.nav-item
+                                            a.nav-link.text-success(href="#") Services
+                                        li.nav-item
+                                            a.nav-link(href="#") Portfolio
+                                        li.nav-item
+                                            a.nav-link(href="#") Team
+                                        li.nav-item
+                                            a.nav-link(href="#") Blog
+                                        li.nav-item
+                                            a.nav-link(href="#") Contact
+                        
+                        .carousel-inner
+                            .carousel-item.active
+                                //p просто текст
 
-                .col-12 
-                    h5.border.border-success.w-25.mx-auto Проверка Поппера
-                .col-12
-                    button.btn.btn-danger#button(type="button" aria-descripbedby="tooltip") I'm a button
-                    div(id="tooltip" role="tooltip") I'm a tooltip
-                .col-12
-                    h5 Проверка Tooltip'а
-                .col-12
-                    button.btn.btn-secondary(type="button" data-toggle="tooltip" data-placement="top" title="Всплывающий текст") Tooltip on top
-                .col-12
-                    h5 Проверка Dropdown'а
-                .col-12
-                    .dropdown
-                        button.btn.btn-secondary.dropdown-toggle(type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Кнопка выпадающего меню
-                            .dropdown-menu(aria-labelledby="dropdownMenuButton")
-                                a.dropdown-item(href="#") Action
-                                a.dropdown-item(href="#") Другой Action
-                                a.dropdown-item(href="#") Что-то там ещё и ещё и ещё
-                .col-12
-                    h5 Проверка Input group
-                .col-12
-                    .input-group.mb-3
-                        .input-group-prepend
-                            span.input-group-text(id="basic-addon1") @
-                        input.form-control(type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon2")
-                    .input-group
-                        .input-group-prepend
-                            span.input-group-text Сраный текст
-                        textarea.form-control(aria-label="With textarea")
+                                img.d-block.w-100(src="./img/carousel/beach.jpg" alt="Первая картинка")
+                                
 
+                                .my-carousel-caption-2.d-none.d-md-flex.flex-column.justify-content-center.align-items-center.border.border-danger
+                                    h3 We are code safe
+                                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                            //.carousel-item
+                            //   img.d-block.w-100(src="./img/carousel/beach2.jpg" alt="Вторая картинка")
+            .row
+                .col-12
+                
+                    .container
+                        .row
+                            .col-7.border.border-danger.d-flex.justify-content-end
+                                .card.w-75
+                                    .card-body
+                                        h5.card-title.text-uppercase This is bouncy
+                                        p.card-text At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                                        a.card-link.border.border-danger.px-5.py-2(href="#" style="border-radius: 16px") Read More
+                            .col-5.border.border-success
+                                .card.mx-auto(style="width: 215px")
+                                    .card-body
+                                        img.card-img-top.w-100(src="./img/IPAD.png" alt="IPAD")
+        button.btn.btn-karka.border.border-danger(style="") говняшка
+        p.doroga zazaza
+        span.suka Это текст из суки
+                    
+
+
+                        
 
     script(src="scripts/result.js")

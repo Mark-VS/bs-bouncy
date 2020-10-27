@@ -1,3 +1,45 @@
+$kaka: rgb(103, 185, 174);
 div {
     color: black
+}
+.test {
+    border: solid 1px #000
+}
+.nav-active {
+    border: solid 1px #000
+}
+/*
+.carousel-caption {
+
+}
+*/
+
+//$carousel-caption-width: 100%;
+
+.my-carousel-caption {
+    @extend .carousel-caption;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.my-carousel-caption-2 {
+    @extend .carousel-caption;
+    top: 0;
+    bottom: auto;
+    padding: 0;
+    height: 100%
+}
+.kakasha {
+    border: solid 1px #000;
+    position: absolute;
+    z-index: 100
+}
+
+
+$shaka: blue;
+$shaka: red;
+$shaka: yellow !default;
+.suka {
+    color: $shaka;
 }

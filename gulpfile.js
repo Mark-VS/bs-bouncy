@@ -21,6 +21,8 @@ let PATHS = {
     }
 }
 const norm = "./node_modules/normalize.css/normalize.css";
+const main = PATHS.src.scss + "main.scss";
+const scssArr = [norm, main];
 
 
 gulp.task("views", () => {
@@ -29,7 +31,7 @@ gulp.task("views", () => {
         .pipe(gulp.dest(PATHS.dist.html));
 });
 gulp.task("styles", () => {
-    return gulp.src([norm, PATHS.src.scss + "main.scss"])
+    return gulp.src(scssArr)
         .pipe(concat("main.scss"))
         .pipe(sass().on("error", sass.logError))
         .pipe(gulp.dest(PATHS.dist.css));
@@ -54,7 +56,7 @@ gulp.task("startServer", () => {
     browserSync.watch(dist, browserSync.reload);
 });
 gulp.task("copy:img", () => {
-    return gulp.src("./src/img/**/*.jpg")
+    return gulp.src("./src/img/**/*[.jpg|.png]")
         .pipe(gulp.dest("./dist/img/"))
 });
 gulp.task("default", gulp.series("views", "styles", "compile", "startServer"));

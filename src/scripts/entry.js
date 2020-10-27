@@ -11,13 +11,12 @@ import { createPopper } from  "./../../node_modules/@popperjs/core/dist/umd/popp
 import Util from "./../../node_modules/bootstrap/js/dist/util.js";
 import Tooltip from "./../../node_modules/bootstrap/js/dist/tooltip";
 import Dropdown from "./../../node_modules/bootstrap/js/dist/dropdown";
+import Carousel from "./../../node_modules/bootstrap/js/dist/carousel";
 
 
 const btn1 = document.querySelector('#button');
 const tooltip1 = document.querySelector('#tooltip');
-createPopper(btn1, tooltip1, {
-  placement: "top"
-});
+
 
 $(function() {
   $('[data-toggle="tooltip"]').tooltip()

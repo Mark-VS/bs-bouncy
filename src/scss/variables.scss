@@ -1,0 +1,25 @@
+
+$pruha: rgb(169, 151, 172);
+$colors: (
+  "pruha": $pruha
+);
+$dermo: $pruha;
+$theme-colors: (
+    "dermo":  $dermo,
+    "dermo2": rgb(127, 128, 77),
+    "karka": rgb(63, 177, 97)
+);
+
+$theme-colors: map-remove($theme-colors, "success", "danger", "dermo");
+@function theme-color($key: "dermo2") {
+  @return map-get($theme-colors, $key);
+}
+$link-color: theme-color("dermo2");
+.doroga {
+    color: blue
+}
+
+
+
+
+  
