@@ -1,3 +1,15 @@
+
+html {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Source Sans Pro Light";
+    margin: 0;
+    padding: 0;
+}
+
 $kaka: rgb(103, 185, 174);
 div {
     color: black
@@ -26,14 +38,64 @@ div {
 .my-carousel-caption-2 {
     @extend .carousel-caption;
     top: 0;
-    bottom: auto;
+    right: 0;
+    left: 0;
     padding: 0;
-    height: 100%
+    height: 100%;
+}
+.glasha {
+ 
+    z-index: 1101;
+
+}
+.kukla {
+
+    font-size: 2rem;
+    @media (max-width: 1199px) {
+        font-size: 1.5rem
+    }
+    @media (max-width: 991px) {
+        font-size: 1.2rem
+    }
+}
+.mukla {
+    font-size: 1.5rem;
+    @media (max-width: 1199px) {
+        font-size: 1.2rem
+    }
+    @media (max-width: 991px) {
+        font-size: .9rem
+    }
+}
+
+.my-h4 {
+    font-family: "Big John";
+    font-size: 2.5rem;
+    @media (max-width: 1199px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 991px) {
+        font-size: 1.8rem;
+    }
+}
+.doroga {
+    font-family: "Source Sans Pro Light";
+    color: green;
 }
 .kakasha {
+    
     border: solid 1px #000;
     position: absolute;
     z-index: 100
+}
+
+.arrow-down {
+    width: 36px;
+    height: 36px;
+    color: blue;
+    background-image: url("./../img/hello/ellipse.png");
+    background-size: cover;
+    cursor: pointer
 }
 
 
@@ -43,3 +105,21 @@ $shaka: yellow !default;
 .suka {
     color: $shaka;
 }
+//$theme-colors: map-remove($theme-colors, "success", "danger");
+
+a.nav-link.active {
+    border: solid 1px white;
+    border-radius: .7rem;
+    line-height: 1.3rem;
+    padding-bottom: .3rem;
+    //background-color: transparent !important;
+} 
+
+.ruka {
+    
+    color: theme-color("danger");
+    &:hover {
+        color: theme-color-level("danger", -4);
+    }
+}
+

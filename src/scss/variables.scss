@@ -1,23 +1,47 @@
+$body-bg:                   white;
+//carousel caption
+$carousel-caption-width:             70%;
+$carousel-caption-color:             white;
 
+$nav-link-padding-y: .2rem;
+$nav-link-padding-x: 1rem;
 $pruha: rgb(169, 151, 172);
 $colors: (
   "pruha": $pruha
 );
 $dermo: $pruha;
 $theme-colors: (
+    "gray-100": #f8f9fa,
     "dermo":  $dermo,
     "dermo2": rgb(127, 128, 77),
-    "karka": rgb(63, 177, 97)
+    "karka": rgb(59, 87, 68),
+    "info": #17a2b8
 );
 
-$theme-colors: map-remove($theme-colors, "success", "danger", "dermo");
-@function theme-color($key: "dermo2") {
-  @return map-get($theme-colors, $key);
+$link-color: #f8f9fa;
+//$border-width: 10px;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+.my-rounded {
+  border-radius: 1rem
 }
-$link-color: theme-color("dermo2");
-.doroga {
-    color: blue
-}
+
+
+
+
+
 
 
 
