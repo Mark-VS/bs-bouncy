@@ -12,6 +12,7 @@ import Util from "./../../node_modules/bootstrap/js/dist/util.js";
 import Tooltip from "./../../node_modules/bootstrap/js/dist/tooltip";
 import Dropdown from "./../../node_modules/bootstrap/js/dist/dropdown";
 import Carousel from "./../../node_modules/bootstrap/js/dist/carousel";
+import Collapse from "./../../node_modules/bootstrap/js/dist/collapse"
 
 
 const btn1 = document.querySelector('#button');

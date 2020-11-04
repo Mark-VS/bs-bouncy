@@ -10,6 +10,7 @@
 @import "./../../node_modules/bootstrap/scss/_buttons.scss";
 @import "./../../node_modules/bootstrap/scss/_input-group.scss";
 @import "./../../node_modules/bootstrap/scss/_nav.scss";
+@import "./../../node_modules/bootstrap/scss/_navbar.scss";
 @import "./../../node_modules/bootstrap/scss/_card.scss";
 
 @import "./../../node_modules/bootstrap/scss/_tooltip.scss";
@@ -18,9 +19,7 @@
 @import "./../../node_modules/bootstrap/scss/_carousel.scss";
 
 
-
+@import "./bootstrap/type";
 @import "main2";
+@import "bouncy";
 
-p {
-    color: $kaka;
-}
