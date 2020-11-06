@@ -1,0 +1,11 @@
+.card_details {
+    width: 35rem;
+    margin: 0 auto;
+    border-width: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    @include media-breakpoint-down(xs) {
+        width: 100vw;
+        
+    }
+}

@@ -21,9 +21,27 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    
     
 }
+.pupa {
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+        padding: 0 5rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 2rem;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0 1rem;
+    }
+
+}
+
+
 .my-navbar {
     width: 80%;
     align-self: center;
@@ -40,4 +58,19 @@ body {
     @media(max-width: 1199px) {
         
     }
+}
+.my-lead {
+    $lead-lg: $font-size-base * 1.2;
+    $lead-md: $font-size-base * 1.15;
+    $lead-sm: $font-size-base * 1.1;
+    @include media-breakpoint-down(lg) {
+        font-size: $lead-lg;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: $lead-md;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: $lead-sm;
+    }
+    
 }

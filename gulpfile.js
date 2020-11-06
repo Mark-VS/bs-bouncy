@@ -62,5 +62,5 @@ gulp.task("copy:img", () => {
 gulp.task("default", gulp.series("views", "styles", "compile", "startServer"));
 
 gulp.watch(PATHS.src.pug + "index.pug", gulp.series("views"));
-gulp.watch(PATHS.src.scss + "*.scss", gulp.series("styles"));
+gulp.watch(PATHS.src.scss + "**/*.scss", gulp.series("styles"));
 gulp.watch(PATHS.src.js + "entry.js", gulp.series("compile"));

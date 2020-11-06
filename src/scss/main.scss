@@ -20,6 +20,11 @@
 
 
 @import "./bootstrap/type";
+// My scss
 @import "main2";
-@import "bouncy";
+@import "./blocks/bouncy";  // logo
+@import "./blocks/ellipse";
+
+// Bootstrap modifiers
+@import "./blocks/card";
 

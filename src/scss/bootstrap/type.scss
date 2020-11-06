@@ -2,9 +2,20 @@
     @include font-size($display5-size);
     font-weight: $display5-weight;
     line-height: $display-line-height;
+    @include media-breakpoint-down(lg) {
+      @include font-size($display6-size);
+    }
+    @include media-breakpoint-down(md) {
+      @include font-size($display7-size);
+    }
   }
   .display-6 {
     @include font-size($display6-size);
     font-weight: $display6-weight;
+    line-height: $display-line-height;
+  }
+  .display-7 {
+    @include font-size($display7-size);
+    font-weight: $display7-weight;
     line-height: $display-line-height;
   }
