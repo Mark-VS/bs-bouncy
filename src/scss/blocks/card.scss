@@ -4,8 +4,9 @@
     border-width: 0;
     padding-top: 2rem;
     padding-bottom: 1rem;
-    @include media-breakpoint-down(xs) {
-        width: 100vw;
+    background-color: transparent;
+    @include media-breakpoint-down(sm) {
+        width: 100%;
         
     }
 }
