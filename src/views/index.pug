@@ -76,20 +76,62 @@ html
                 .card-body
                     h4.card-title FEATURED PROJECTS
                     h5.card-subtitle At vero eos et accusamus et iusto odi dignissimos ducimus qui blanditiis praesentium
-            .row.m-0.border.border-info
-                .col-12.col-lg-6.border-danger.p-0(style="min-height: 260px")
-                    div.whiskey
-                .col-6.col-lg-3.border.border-success.p-0(style="min-height: 260px")
-                    div.vintage
-                        div.border.border-primary.w-100.h-100.tile VINTAGE
-                .col-6.col-lg-3.branding.p-0(style="min-height: 260px")
-                    .tile2 BRANDING
-            div.border.border-success.fp-footer
-                .row.m-0(style="background-color: rgba(25, 189, 154, .5)").h-100
-                    .col-9.border.border-danger.d-flex.justify-content-center.align-items-center
-                        p(style="font-size: 1.3rem") At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis
-                    .col-3.p-0.d-flex.justify-content-center.align-items-center
+            .row.m-0
+                .col-12.col-lg-6.p-0.fp__whiskey
+                     div s
+                .col-6.col-lg-3.p-0.fp__vintage
+                    .fp__tile VINTAGE
+                .col-6.col-lg-3.p-0.fp__branding
+                    .fp__tile BRANDING
+            .fp-footer
+                .row.m-0.fp-footer__row
+                    .col-9.p-0.fp-footer__column.justify-content-center
+                        p.fp-footer__text At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis
+                    .col-3.p-0.fp-footer__column
                         button Submit Now
+        .dark-section    
+            .container.p-0
+                .card.card_services
+                    .card-body
+                        h4.card-title.text-center.pb-3 OUR SERVICES
+                        h5.card-subtitle.text-center At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                .row.m-0
+                    .col.services__options-and-desc
+                        div.services__options
+                            ul.services__list
+                                li.services__item
+                                    img.services__img(src="./img/services/wrench.png" alt="Wrench")
+                                li.services__item.services__item_active
+                                    img.services__img(src="./img/services/roller.png" alt="Roller")
+                                li.services__item
+                                    img.services__img(src="./img/services/joystick.png" alt="Joystick")
+                                li.services__item
+                                    img.services__img(src="./img/services/plug.png" alt="Plug")
+                        div.services__desc
+                            h4 Graphic Design
+                            p At vero eos et accusamus et <strong>iusto</strong> odio dignissimos <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti
+                            p quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <strong>similique sunt</strong> in culpa qui officia deserunt miliitia animi, id est laborum et dolorum fuga.
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempora, sed doloribus necessitatibus rerum eos ab hic! Ipsum laudantium molestiae similique modi voluptatem sint deleniti harum magni necessitatibus, quae fuga.
+                            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia reiciendis sunt exercitationem itaque nobis perspiciatis in odit nam deserunt a. Perspiciatis natus veritatis est impedit veniam? Veritatis eaque ut atque?
+                    .col.p-0
+                        .row.m-0
+                            .col.p-0 Branding
+                            .col.p-0 Web Design
+                            .col.p-0 UI/UX
+        .container.p-0.impression
+            .row.m-0.impression__raw
+                .col-6.impression__col
+                    h4 Impressed ?
+                    p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti aqque corrupti quos dolores et quas molestias.
+        
+                        ul(style="list-style-type: none").p-0
+                            li - <b>ABDULAH NOMAN</b>
+                            li CREATIVE DIRECTOR, <b>CODE CAFE</b>
+                
+                .col-6.p-0.border.border-danger
+                    div.impression__monitor.border.border-warning
+                        div(style="transform: translateY(-1.6rem)").bouncy B<span class="cyan">O</span>UNCY
+                            
         //
             div.border.border-danger.duba
                 div.border.border-warning(style="flex-grow: 2") kaka

@@ -1,0 +1,49 @@
+.impression {
+    //height: 500px;
+    background-image: url("./../img/services/impressed_normal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 50%;
+
+}
+.impression__raw {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+.impression__col {
+    color: #fff;
+    padding: 2rem 4rem;
+    min-height: 360px;
+    @include media-breakpoint-down(lg) {
+        padding: 2rem 3rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 2rem 2rem;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 2rem 1rem;
+    }
+}
+.impression__monitor {
+    margin-top: -2rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    min-height: 300px;
+    width: 409px;
+    background-image: url("./../img/services/bouncy-monitor.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+        width: 300px;
+    }
+    @include media-breakpoint-down(sm) {
+        width: 220px;
+    }
+}

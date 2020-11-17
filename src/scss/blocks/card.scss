@@ -10,3 +10,12 @@
         
     }
 }
+.card_services {
+    background-color: transparent;
+    border-width: 0;
+    width: 35rem;
+    margin: 0 auto;
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}

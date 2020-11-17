@@ -1,0 +1,58 @@
+
+.fp {
+    &__whiskey {
+        min-height: 260px;
+        background-image: url("./../img/featured-projects/whiskey.jpg");
+        background-size: cover;
+    }
+    &__vintage {
+        min-height: 260px;
+        background-image: url("./../img/featured-projects/vintage.jpg");
+        background-size: cover;
+        color: #ffffff;   
+    }
+    &__branding {
+        min-height: 260px;
+        background-image: url("./../img/featured-projects/branding.jpg");
+        background-size: cover;
+        color: white;
+    }
+    &__tile {
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: .4rem;
+    }
+    &-footer {
+        background-image: url("./../img/featured-projects/legs0.jpg");
+        background-size: cover;
+        //min-height: 90px;
+        height: 90px;
+        color: white;
+        overflow: hidden;
+        @include media-breakpoint-down(xs) {
+            height: 110px;
+        }
+        &__row {
+            height: 100%;
+            background-color: rgba(25, 189, 154, .5);
+        }
+        &__column {
+            display: flex;
+            //justify-content: center;
+            align-items: center;
+        }
+        &__text {
+            padding: 0 3rem;
+            margin: 0;
+            font-size: 1.3rem;
+            @include media-breakpoint-down(xs) {
+                padding: 0 1.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

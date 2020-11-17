@@ -30,8 +30,11 @@
 @import "./bootstrap/type";
 // My scss
 @import "main2";
-@import "./blocks/bouncy";  // logo
+@import "./blocks/bouncy";          // logo
 @import "./blocks/ellipse";
+@import "./blocks/fp";              // Featured projects section
+@import "./blocks/impression";      // Ipression section
+@import "./blocks/services";        // Services block
 
 // Bootstrap modifiers
 @import "./blocks/card";
